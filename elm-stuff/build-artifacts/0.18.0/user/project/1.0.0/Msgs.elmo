@@ -1,0 +1,5 @@
+var _user$project$Msgs$Input = function (a) {
+	return {ctor: 'Input', _0: a};
+};
+var _user$project$Msgs$Clear = {ctor: 'Clear'};
+var _user$project$Msgs$Add = {ctor: 'Add'};

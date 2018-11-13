@@ -1,0 +1,25 @@
+var _user$project$Update$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		switch (_p0.ctor) {
+			case 'Add':
+				return _elm_lang$core$Native_Utils.update(
+					model,
+					{calories: model.calories + model.input});
+			case 'Input':
+				var _p1 = _elm_lang$core$String$toInt(_p0._0);
+				if (_p1.ctor === 'Ok') {
+					return _elm_lang$core$Native_Utils.update(
+						model,
+						{input: _p1._0});
+				} else {
+					return _elm_lang$core$Native_Utils.update(
+						model,
+						{input: 0});
+				}
+			default:
+				return _elm_lang$core$Native_Utils.update(
+					model,
+					{calories: 0});
+		}
+	});

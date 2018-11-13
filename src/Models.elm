@@ -1,14 +1,33 @@
-module Models exposing (Model, initialModel)
+module Models exposing (..)
 
 
 type alias Model =
-    { calories : Int
-    , input : Int
+    { 
+        players: List Player,
+        plays: List Play,
+        name: String, 
+        playerId: Maybe Int
     }
 
+type alias Player =
+    {
+        id: Int,
+        name: String,
+        points: Int
+    }
+
+type alias Play =
+    {
+        id: Int,
+        player: Player,
+        points: Int
+    }
 
 initialModel : Model
 initialModel =
-    { calories = 0
-    , input = 0
+    { 
+        players = [],
+        plays = [],
+        name = "",
+        playerId = Nothing
     }

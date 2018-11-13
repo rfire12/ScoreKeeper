@@ -1,0 +1,29 @@
+.container{
+    width: 25%;
+    border: 1px black solid;
+    position: relative;
+}
+
+.container > h1{
+    margin-left: 3%;
+    font-family: cursive;  
+}
+
+.playerSectionHeader{
+    width: 90%;
+    background-color: #DBDBDB;
+    margin-left: 3%;
+    padding: 2%;
+    position: relative;
+}
+
+.playerSectionHeader > span
+{
+    font-family: Verdana;
+}
+
+.playerSectionHeader > span:nth-child(2)
+{ 
+    position: absolute;
+    right:5%;
+}

@@ -1,7 +1,10 @@
 module Msgs exposing (Msg(..))
-
+import Models exposing (..)
 
 type Msg
-    = Add
-    | Clear
+    = Edit Player
+    | Score Player Int
     | Input String
+    | Save
+    | Cancel
+    | DeletePlay Play
